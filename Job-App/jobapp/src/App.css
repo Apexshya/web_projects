@@ -1,0 +1,44 @@
+/* src/App.css */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: auto;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(270deg, #18E1D9, #0B0B15);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  z-index: -1;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8); /* Optional: to make the content stand out */
+  border-radius: 10px;
+  margin: 55px;
+}
